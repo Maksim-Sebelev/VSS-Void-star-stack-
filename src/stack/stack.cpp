@@ -382,10 +382,12 @@ static StackErrorType MoveDataToFirstElem(Stack_t* stack)
 
 static size_t GetSize(size_t typeSize)
 {
-    size_t rem = typeSize % 4;
-    size_t tmp = (rem == 0) ? 0 : 4 - rem;
-    return typeSize + tmp;
+    // size_t rem = typeSize % 4;
+    // size_t tmp = (rem == 0) ? 0 : 4 - rem;
+    // return typeSize + tmp;
+    return typeSize;
 }
+
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
