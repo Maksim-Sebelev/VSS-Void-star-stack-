@@ -12,7 +12,7 @@ BUILD_TYPE ?= release
 
 
 ifeq ($(BUILD_TYPE), release)
-	CFLAGS += -DNDEBUG -O3 -ffast-math -flto
+	CFLAGS += -DNDEBUG -O3 -ffast-math -flto -march=native
 endif 
 
 ifeq ($(BUILD_TYPE), debug)
