@@ -45,9 +45,7 @@ int main()
 
     STACK_ASSERT(StackPop (&stack, &pop2,  sizeof(pop2 ))); // pop 2
     print_exp(pop2); printf("\n");
-    
-
-    
+        
     STACK_ASSERT(StackDtor(&stack                       )); 
 
     return EXIT_SUCCESS;
